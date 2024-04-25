@@ -34,8 +34,8 @@
 //      "@utils/*": ["utils/*"],
 //      "@config/*": ["config/*"],
 //      "@hooks/*": ["hooks/*"],
-//      "@type/*": ["type/*"],
-//      "@data/*": ["data/*"],
+      "@type/*": ["type/*"],
+      "@data/*": ["data/*"],
     }
   },
   "include": ["src"],

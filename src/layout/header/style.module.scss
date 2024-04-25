@@ -1,5 +1,12 @@
+@import "@styles/common/variables";
+
 .header {
   width: 100%;
-  height: 79px;
+  height: $header-height;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background: #FFF;
+  border-bottom: 1px solid #E1E1E3;
 }

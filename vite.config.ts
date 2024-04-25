@@ -18,8 +18,8 @@ export default defineConfig({
 			// '@utils': path.resolve(__dirname, './src/utils'),
 			// '@config': path.resolve(__dirname, './src/config'),
 			// '@hooks': path.resolve(__dirname, './src/hooks'),
-			// '@type': path.resolve(__dirname, './src/type'),
-			// '@data': path.resolve(__dirname, './src/data'),
+			'@type': path.resolve(__dirname, './src/type'),
+			'@data': path.resolve(__dirname, './src/data'),
 		},
 	},
 	plugins: [

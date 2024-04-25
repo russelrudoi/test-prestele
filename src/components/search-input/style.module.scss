@@ -1,0 +1,32 @@
+.searchInput {
+  position: relative;
+  padding-left: 34px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    background: url("@assets/layout/header/search.svg") center center no-repeat;
+  }
+
+  input {
+    width: 235px;
+    height: 18px;
+    border: none;
+    font-size: 14px;
+    color: #A6A7AC;
+
+    &::placeholder {
+      font-family: "SF Pro", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      color: #A6A7AC;
+    }
+
+    &:focus{
+      outline: none;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.user {
+  display: flex;
+  gap: 8px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+}
+
+.email {
+  font-size: 10px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+}
+
+.avatar {
+  width: 37px;
+  height: 37px;
+}
