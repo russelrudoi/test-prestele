@@ -1,0 +1,25 @@
+.sidebar {
+  //position: fixed;
+  //top: 0;
+  //left: 0;
+  height: 100vh;
+  display: flex;
+  background: #FFF;
+}
+
+.nav {
+  width: 72px;
+
+}
+
+.sidebarLinks {
+  width: 0;
+  opacity: 0;
+  transition: width .3s ease-in-out,
+              opacity .3s ease-in-out;
+
+  &.active {
+    width: 212px;
+    opacity: 1;
+  }
+}
