@@ -1,8 +1,15 @@
+@import "@styles/common/variables.scss";
+
 .wrapper {
-  color: #FFF;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   height: 100vh;
+
+  color: #FFF;
+
+  * {
+    font-family: $font-family-second;
+  }
 }
 
 .container {
@@ -21,7 +28,7 @@
 }
 
 .title {
-  margin-top: 8px;
+  margin-top: 13px;
   font-size: 32px;
   font-weight: 700;
   line-height: 120%;
@@ -38,6 +45,7 @@
   justify-content: space-between;
 
   font-weight: 600;
+  font-size: 18px;
 }
 
 .adminPanel {
