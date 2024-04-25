@@ -1,0 +1,29 @@
+*,
+*::before,
+::after {
+  box-sizing: border-box;
+  font-family: 'SF Pro Text', sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: 'SF Pro Text', sans-serif;
+  background-color: #F9FAFC;
+  //color: rgba(0, 0, 0, 0.88);
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li {
+  margin: 0;
+}

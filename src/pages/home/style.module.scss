@@ -1,0 +1,52 @@
+.wrapper {
+  color: #FFF;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+}
+
+.container {
+  padding: 24px 60px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: #242424;
+}
+
+.suptitle {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 120%;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.btnNav {
+  max-width: 278px;
+  margin-top: 60px;
+  height: 60px;
+  justify-content: space-between;
+
+  font-weight: 600;
+}
+
+.adminPanel {
+  background: url('@assets/pages/home/admin-panel.png') bottom right no-repeat, #0B121A;
+}
+
+.hoverAnim {
+  background: url('@assets/pages/home/hover-anim.png') center right no-repeat, #85C3ED;
+}
+
+.graphicAnim {
+  background: url('@assets/pages/home/graphic-anim.png') center right no-repeat, #0B121A;
+}
+
+
+
