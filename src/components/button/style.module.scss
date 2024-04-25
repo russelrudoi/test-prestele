@@ -9,4 +9,14 @@
     border: none;
     border-radius: 16px;
     cursor: pointer;
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+        background: #1c48e0;
+    }
+
+    &:active {
+        transition: background-color .15s ease-out;
+        background: #0f2779;
+    }
 }
