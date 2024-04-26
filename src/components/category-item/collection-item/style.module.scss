@@ -1,0 +1,52 @@
+.collection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.btnCollapse {
+  transition: all .3s ease-in-out;
+
+  &.active {
+    transform: rotateX(180deg);
+  }
+}
+
+.nameCollection {
+  margin-left: 24px;
+  display: inline-flex;
+  align-items: center;
+  gap: 17.5px;
+
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+
+  input {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: none;
+    background: #F9FAFC;
+
+    &:focus{
+      outline: none;
+    }
+  }
+}
+
+
+.content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms;
+
+  &.active {
+    grid-template-rows: 1fr;
+  }
+
+  &Inner {
+    overflow: hidden;
+  }
+}

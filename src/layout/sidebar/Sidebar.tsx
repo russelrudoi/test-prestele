@@ -86,7 +86,10 @@ const Sidebar = () => {
 					<h3 className={s.navTitle}>{selectedItem?.title}</h3>
 					<ul className={s.links}>
 						{selectedItem?.links.map((item, index) => (
-							<li key={index}>{item.title}</li>
+							<li key={index}>
+								{item.title}
+								{item.isNotific && <span className={s.notific}></span>}
+							</li>
 						))}
 					</ul>
 				</div>
