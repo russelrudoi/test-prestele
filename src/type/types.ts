@@ -9,3 +9,19 @@ export interface INavItem {
 		isNotific?: boolean
 	}[]
 }
+
+export interface ICategoryItem {
+	id: string
+	collections: ICollection[]
+}
+
+export interface ICollection {
+	id: string
+	name: string
+	notes: INote[]
+}
+
+export interface INote {
+	id: string
+	name: string
+}
