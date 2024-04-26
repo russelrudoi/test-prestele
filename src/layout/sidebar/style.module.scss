@@ -34,7 +34,7 @@
     position: relative;
     cursor: pointer;
 
-    &:hover {
+    &.active {
       svg{
         path {
           stroke: #3D4DFF;
@@ -49,6 +49,26 @@
         width: 2px;
         height: 24px;
         background: #3D4DFF;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        svg{
+          path {
+            stroke: #3D4DFF;
+          }
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 2px;
+          height: 24px;
+          background: #3D4DFF;
+        }
       }
     }
   }
@@ -69,6 +89,14 @@
   &.active {
     width: 212px;
     opacity: 1;
+  }
+
+  @media (max-width: $m) {
+    position: fixed;
+    top: 0;
+    left: 73px;
+    height: 100vh;
+    z-index: 100;
   }
 }
 
@@ -104,8 +132,10 @@
     transition: color .2s ease-in-out;
     cursor: pointer;
 
-    &:hover {
-      color: #3D4DFF;
+    @media (hover: hover) {
+      &:hover {
+        color: #3D4DFF;
+      }
     }
   }
 

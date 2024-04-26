@@ -69,7 +69,7 @@ const CollectionItem: FC<ICollectionItem> = props => {
 						)}
 					</p>
 				</div>
-				<div>
+				<div className={s.editBlock}>
 					<EditBlock
 						handleEdit={handleEdit}
 						handleDelete={handleDelete}

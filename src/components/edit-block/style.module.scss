@@ -4,9 +4,11 @@
   gap: 16px;
 
   button {
-    &:hover {
-      svg path {
-        stroke: #3D4DFF;
+    @media (hover: hover) {
+      &:hover {
+        svg path {
+          stroke: #3D4DFF;
+        }
       }
     }
   }

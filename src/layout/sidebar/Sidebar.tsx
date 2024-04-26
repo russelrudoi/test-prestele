@@ -58,7 +58,13 @@ const Sidebar = () => {
 				<nav className={s.nav}>
 					<ul className={s.navList}>
 						{NAV_ITEMS.map((item, index) => (
-							<li className={s.navItem} key={index} onClick={() => onToggle(item.id)}>
+							<li
+								className={clsx(s.navItem, {
+									[s.active]: selectedItemId === item.id,
+								})}
+								key={index}
+								onClick={() => onToggle(item.id)}
+							>
 								{item.icon}
 							</li>
 						))}

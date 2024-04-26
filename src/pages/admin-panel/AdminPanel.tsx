@@ -9,7 +9,7 @@ import s from './style.module.scss'
 const AdminPanel = () => {
 	const [categories, setCategories] = useState(dataCategories)
 	function addCategory() {
-		setCategories([...categories, { id: uuidv4(), collections: [] }])
+		setCategories([{ id: uuidv4(), collections: [] }, ...categories])
 	}
 
 	return (

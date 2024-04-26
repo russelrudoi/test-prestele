@@ -1,8 +1,16 @@
+@import "@styles/common/variables";
+
 .collection {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+
+  @media (max-width: $s) {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    align-items: start;
+  }
 }
 
 .btnCollapse {
@@ -34,8 +42,22 @@
       outline: none;
     }
   }
+
+  @media (max-width: $s) {
+    margin-left: 10px;
+
+    input {
+      max-width: 150px;
+    }
+  }
 }
 
+@media (max-width: $s) {
+  .editBlock {
+    margin-left: auto;
+    margin-bottom: 8px;
+  }
+}
 
 .content {
   display: grid;

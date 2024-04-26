@@ -1,5 +1,8 @@
+@import "@styles/common/variables";
+
 .user {
   display: flex;
+  align-items: center;
   gap: 8px;
 }
 
@@ -14,6 +17,10 @@
   font-weight: 400;
   font-family: "Poppins", sans-serif;
   text-align: right;
+
+  @media (max-width: $m) {
+    display: none;
+  }
 }
 
 .avatar {
