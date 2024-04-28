@@ -31,7 +31,7 @@
 //      "@store/*": ["store/*"],
 //      "@ui-kit/*": ["ui-kit/*"],
       "@styles/*": ["styles/*"],
-//      "@utils/*": ["utils/*"],
+      "@utils/*": ["utils/*"],
 //      "@config/*": ["config/*"],
 //      "@hooks/*": ["hooks/*"],
       "@type/*": ["type/*"],

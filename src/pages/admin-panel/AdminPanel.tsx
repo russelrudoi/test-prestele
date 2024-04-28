@@ -1,5 +1,6 @@
 import { dataCategories } from '@data/data-category.ts'
 import MainLayout from '@layout/main-layout/MainLayout.tsx'
+import { motion } from 'framer-motion'
 import { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import CategoryItem from '@components/category-item/CategoryItem.tsx'
@@ -13,7 +14,12 @@ const AdminPanel = () => {
 	}
 
 	return (
-		<section className={s.wrapper}>
+		<motion.section
+			className={s.wrapper}
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1, transition: { duration: 2 } }}
+			exit={{ opacity: 0 }}
+		>
 			<MainLayout>
 				<div className={s.content}>
 					<div className={s.header}>
@@ -37,7 +43,7 @@ const AdminPanel = () => {
 					</ul>
 				</div>
 			</MainLayout>
-		</section>
+		</motion.section>
 	)
 }
 

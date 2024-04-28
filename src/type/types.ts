@@ -25,3 +25,9 @@ export interface INote {
 	id: string
 	name: string
 }
+
+export interface ISlider {
+	id: number
+	image: string
+	backgroundColor: string
+}

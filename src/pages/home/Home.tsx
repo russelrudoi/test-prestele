@@ -1,3 +1,4 @@
+import { URL } from '@data/URL.ts'
 import clsx from 'clsx'
 import { Link } from 'react-router-dom'
 import { Button } from '@components/button/button.tsx'
@@ -14,7 +15,7 @@ const Home = () => {
 						Admin Panel <br />
 						Manage Category Page
 					</h2>
-					<Link to={'/admin-panel'}>
+					<Link to={URL.ADMIN_PANEL}>
 						<Button icon={<ArrowSvg />} className={s.btnNav}>
 							Case Study
 						</Button>
@@ -27,9 +28,11 @@ const Home = () => {
 					Hover animation <br />
 					With drag and drop
 				</h2>
-				<Button icon={<ArrowSvg />} className={s.btnNav}>
-					Case Study
-				</Button>
+				<Link to={URL.HOVER_ANIM}>
+					<Button icon={<ArrowSvg />} className={s.btnNav}>
+						Case Study
+					</Button>
+				</Link>
 			</div>
 			<div className={clsx(s.graphicAnim, s.container)}>
 				<p className={s.suptitle}>Test 3</p>

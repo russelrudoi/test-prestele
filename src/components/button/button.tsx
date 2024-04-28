@@ -5,7 +5,6 @@ import s from './style.module.scss'
 interface IButton {
 	readonly children: string
 	readonly icon?: ReactNode
-	// readonly theme?: 'blue' | 'transparent-grey' | 'transparent-blue'
 	readonly disabled?: boolean
 	readonly className?: string
 	readonly onClick?: () => void

@@ -3,8 +3,8 @@ import { v4 as uuidv4 } from 'uuid'
 import CollectionItem from '@components/category-item/collection-item/CollectionItem.tsx'
 import NoteItem from '@components/category-item/note-item/NoteItem.tsx'
 import AddIcon from '@assets/pages/admin-panel/add-icon.svg?react'
+import { collectionsReducer } from '@utils/reducers/collectionReducer.ts'
 import { ICategoryItem, ICollection, INote } from '@type/types.ts'
-import { collectionsReducer } from '../../helpers/reducers/collectionReducer.ts'
 import s from './style.module.scss'
 
 interface ICategory {
