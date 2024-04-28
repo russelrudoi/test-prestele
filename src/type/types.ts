@@ -31,3 +31,9 @@ export interface ISlider {
 	image: string
 	backgroundColor: string
 }
+
+export interface IAnim {
+	id: number
+	title: string
+	icon: string[]
+}

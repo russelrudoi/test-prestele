@@ -28,12 +28,8 @@
       "@layout/*": ["layout/*"],
       "@layout": ["layout"],
       "@pages/*": ["pages/*"],
-//      "@store/*": ["store/*"],
-//      "@ui-kit/*": ["ui-kit/*"],
       "@styles/*": ["styles/*"],
       "@utils/*": ["utils/*"],
-//      "@config/*": ["config/*"],
-//      "@hooks/*": ["hooks/*"],
       "@type/*": ["type/*"],
       "@data/*": ["data/*"],
     }

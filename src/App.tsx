@@ -2,6 +2,7 @@ import { URL } from '@data/URL.ts'
 import { AnimatePresence } from 'framer-motion'
 import { Route, Routes, useLocation } from 'react-router-dom'
 import AdminPanel from '@pages/admin-panel/AdminPanel.tsx'
+import GraphicAnim from '@pages/graphic-anim/GraphicAnim.tsx'
 import Home from '@pages/home/Home.tsx'
 import HoverAnim from '@pages/hover-anim/HoverAnim.tsx'
 import '@styles/global.scss'
@@ -15,6 +16,7 @@ function App() {
 				<Route path={URL.HOME} element={<Home />} />
 				<Route path={URL.ADMIN_PANEL} element={<AdminPanel />} />
 				<Route path={URL.HOVER_ANIM} element={<HoverAnim />} />
+				<Route path={URL.GRAPHIC_ANIM} element={<GraphicAnim />} />
 			</Routes>
 		</AnimatePresence>
 	)

@@ -82,12 +82,70 @@
 }
 
 .graphicAnim {
-  background: url('@assets/pages/home/graphic-anim.png') center right no-repeat, #0B121A;
+  position: relative;
+  background: #0B121A;
+  overflow: hidden;
 
   @media (max-width: 550px) {
     background-position: center center;
   }
 }
+
+.animWrapper {
+  width: 220px;
+  height: 220px;
+
+  div {
+    color: #808080;
+  }
+}
+
+.anim {
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.relocationWrapper {
+  position: absolute;
+  top: 8%;
+  right: 13%;
+  width: 249px;
+  height: 249px;
+
+  div {
+    color: #808080;
+  }
+}
+
+.relocationAnim {
+  width: 100%;
+  height: 100%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    filter: invert(34%) sepia(0%) saturate(22%) hue-rotate(142deg) brightness(96%) contrast(84%);
+  }
+}
+
+.corporate {
+  position: absolute;
+  top: -13%;
+  right: -1%;
+}
+
+.home {
+  position: absolute;
+  top: 56%;
+  right: -1%;
+}
+
+
 
 
 

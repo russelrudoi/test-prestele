@@ -1,0 +1,48 @@
+.wrapper {
+  position: relative;
+  width: 374px;
+  height: 374px;
+  cursor: pointer;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: transparent;
+  background-image: linear-gradient(to right ,#030202, #030202, rgb(255, 96, 0),#030202, #030202);
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 200%;
+  background-position: -200%;
+  animation: animated-gradient 5s infinite reverse;
+}
+
+@keyframes animated-gradient{
+
+    0% {
+      background-position: -200%;
+    }
+    100% {
+      background-position: 200%;
+    }
+}
+
+.animWrapper {
+  //width: 100%;
+  //height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  //width: fit-content;
+  transform: translate(-50%, -50%);
+
+  //img {
+  //  width: 100%;
+  //  height: 100%;
+  //}
+}

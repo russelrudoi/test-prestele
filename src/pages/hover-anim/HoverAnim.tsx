@@ -82,6 +82,9 @@ export default function HoverAnim() {
 			setDirectionSwipe('back')
 		}
 	}
+
+	// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+	//@ts-expect-error
 	const getNextColor = (slides, index: number) => {
 		if (!slides || !slides.length) return
 
